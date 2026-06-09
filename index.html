@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecasting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="weather-card" aria-label="Weather dashboard">
+        <div class="star-field" aria-hidden="true"></div>
+
+      <!-- Header section -->
+        <header class="topbar">
+          <div class="location-block">
+            <h1 id="cityName">Weather App</h1>
+            <p id="dateLine">Thursday, 31 August 2025 | 10:15 PM</p>
+          </div>
+
+          <!-- Search bar or live location section -->
+          <form class="search-box" id="searchForm">
+            <input
+              id="cityInput"
+              type="search"
+              placeholder="Enter city name"
+              autocomplete="off"
+              aria-label="Enter city name"
+            />
+            <button class="search-button" type="submit">Search</button>
+            <button
+              class="icon-button"
+              id="locationButton"
+              type="z"
+              aria-label="Use current location"
+              title="Use current location"
+            >
+              <span aria-hidden="true">⌾</span>
+            </button>
+          </form>
+        </header>
+
+        <!-- Current Temperature Data -->
+        <section class="current-weather" aria-label="Current weather">
+          <div class="temperature-block">
+            <div class="temperature-row">
+              <span class="temperature" id="temperature">0</span>
+              <div class="unit-block" aria-label="Temperature units">
+                <div class="unit-toggle">
+                  <button class="unit active" type="button" data-unit="c">°C</button>
+                  <span>|</span>
+                  <button class="unit" type="button" data-unit="f">°F</button>
+                </div>
+                <strong id="condition">Partly cloudy</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-weather-art" id="mainWeatherArt" aria-hidden="true">
+            <div class="weather-visual partly-cloudy large">
+              <span class="moon"></span>
+              <span class="spark spark-one"></span>
+              <span class="spark spark-two"></span>
+              <span class="cloud">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+          </div>
+
+          <!-- feel like, humidity, Wind, pressure and visuals -->
+          <dl class="weather-stats">
+            <div>
+              <dt class="stat-icon">♨</dt>
+              <dd>Feels like: <span id="feelsLike">31°C</span></dd>
+            </div>
+            <div>
+              <dt class="stat-icon">♧</dt>
+              <dd>Humidity: <span id="humidity">15%</span></dd>
+            </div>
+            <div>
+              <dt class="stat-icon">≋</dt>
+              <dd>Wind: <span id="wind">14 km/h</span></dd>
+            </div>
+            <div>
+              <dt class="stat-icon">⏲</dt>
+              <dd id="pressure">--hPa</dd>
+            </div>
+          </dl>
+        </section>
+
+        <!-- Forcasting Days -->
+        <section class="forecast-panel" aria-label=" Ten day forecast">
+          <div class="forecast-list" id="forecastList"></div>
+        </section>
+
+        <p class="status-message" id="statusMessage" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
