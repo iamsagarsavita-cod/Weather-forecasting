@@ -31,13 +31,16 @@
             <button
               class="icon-button"
               id="locationButton"
-              type="z"
+              type="button"
               aria-label="Use current location"
               title="Use current location"
             >
               <span aria-hidden="true">⌾</span>
             </button>
+        <p class="status-message" id="statusMessage" role="status" aria-live="polite"></p>
+
           </form>
+
         </header>
 
         <!-- Current Temperature Data -->
@@ -95,7 +98,6 @@
           <div class="forecast-list" id="forecastList"></div>
         </section>
 
-        <p class="status-message" id="statusMessage" role="status" aria-live="polite"></p>
       </section>
     </main>
 
