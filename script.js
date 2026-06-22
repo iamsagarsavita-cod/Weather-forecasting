@@ -52,21 +52,22 @@ const fallbackWeather = {
   timezone: "America/Toronto",
 
   current: {
-    time: "2023-08-31T22:15",
-    temp: 15,
-    feels: 31,
-    humidity: 15,
-    wind: 14,
-    pressure: 1013,
-    code: 2,
+    time: "2026-03-25T22:15",
+    temp: 0,
+    feels: 0,
+    humidity: 0,
+    wind: 0,
+    pressure: 0,
+    code: 0,
   },
 
   daily: [
-    { date: "2023-08-31", max: 23, min: 14, code: 3 },
-    { date: "2023-09-01", max: 26, min: 18, code: 0 },
-    { date: "2023-09-02", max: 25, min: 17, code: 45 },
-    { date: "2023-09-03", max: 22, min: 13, code: 61 },
-    { date: "2023-09-04", max: 24, min: 11, code: 95 },
+    { date: "2026-03-25", max: 23, min: 14, code: 3 },
+    { date: "2026-03-26", max: 26, min: 18, code: 0 },
+    { date: "2026-03-27", max: 25, min: 17, code: 45 },
+    { date: "2026-03-28", max: 22, min: 13, code: 61 },
+    { date: "2026-03-29", max: 24, min: 11, code: 95 },
+    { date: "2026-03-30", max: 23, min: 0, code: 5 },
   ],
 };
 
