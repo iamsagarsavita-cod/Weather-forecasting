@@ -482,7 +482,7 @@ searchForm.addEventListener("submit", async (event) => {
 
   // Empty input validation
   if (!query) {
-    setStatus("❌ Please enter a city name.");
+    setStatus("❌ Please Enter a City Name.");
     return;
   }
 
