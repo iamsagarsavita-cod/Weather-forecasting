@@ -258,7 +258,7 @@ body::after {
 }
 
 .search-box button:hover {
-  background: red;
+  background: rgb(240, 29, 29);
   color: white;
   transform: translateY(-1px);
   box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
