@@ -48,7 +48,7 @@ const unitButtons = document.querySelectorAll(".unit");
 
 const fallbackWeather = {
   name: "Weather App",
-  country: "Canada",
+  country: "India",
   timezone: "America/Toronto",
 
   current: {
@@ -67,7 +67,13 @@ const fallbackWeather = {
     { date: "2026-03-27", max: 25, min: 17, code: 45 },
     { date: "2026-03-28", max: 22, min: 13, code: 61 },
     { date: "2026-03-29", max: 24, min: 11, code: 95 },
-    { date: "2026-03-30", max: 23, min: 0, code: 5 },
+    { date: "2026-03-30", max: 23, min: 0, code: 95 },
+    { date: "2026-03-31", max: 23, min: 0, code: 95 },
+    { date: "2026-04-01", max: 23, min: 0, code: 95 },
+    { date: "2026-04-02", max: 23, min: 0, code: 95 },
+    { date: "2026-04-03", max: 23, min: 0, code: 95 },
+
+
   ],
 };
 
